@@ -7,7 +7,7 @@ LFLAGS = -ffreestanding -O2 -nostdlib
  
 LIBS = -lgcc
 
-all: clean compile_boot compile_kernel link_kernel
+all: compile_boot compile_kernel link_kernel
 
 compile_boot:
 	$(AS) boot/boot.s -o boot.o
